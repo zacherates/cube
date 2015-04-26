@@ -1,0 +1,354 @@
+Arrest
+Arbelest Elite
+Alabaster Mage
+Ainok Bond-Kin
+Afterlife
+Accorder Paladin
+Condem
+Cloudgoat Ranger
+Cliff Threader
+Cavalry Pegasus
+Blinding Mage
+Banisher Priest
+Geist of the Moors
+Flickrwisp
+Fiend Hunter
+Emerge Unscathed
+Elite Scaleguard
+Inspired Charge
+Guardians' Pledge
+Guard Duty
+Gods Willing
+Glorius Charge
+Glimmerpoint Stag
+Leonin Relic Warder
+Kor Skyfisher
+Kor Hookmaster
+Knight of Glory
+Kill Shot
+Journey to Nowhere
+Oust
+Oblivion Ring
+Master of Diversion
+Marsh Threader
+Mardu Horde-Chief
+Loxodon Partisan
+Lingering Souls
+Seraph of the Masses
+Selfless Cathar
+Sandsteppe Outcast
+Sandblast
+Reprisal
+Poreclain Legonnaire
+Pillar of Light
+Pacifism
+Valorous Stance
+Triplicate Spirits
+Steppe Lynx
+Spectral Procession
+Smite
+Silverchase Fox
+Serra Angel
+Errant Ephemeron
+Deep Analysis
+Compulsive Research
+Brainstorm
+White Knight
+War Priest of Thune
+Wandering Champion
+Wall of Swords
+Riftwing Cloudskate
+Mulldrifter
+Man-o'-War
+Impulse
+Favorable Winds
+Fact of Fiction
+Cancel
+Azure Mage
+Aven Surveyor
+Augur of Bolas
+Anticipate
+Air Servant
+AEther Adept
+Enclave Cryptologist
+Domestication
+Delver of Secrets
+Dakra Mystic
+Crippling Chill
+Courtly Provocateur
+Illusionary Angel
+Horizon Drake
+Gurmag Drowner
+Gitaxian Probe
+Frost Lynx
+Forbidden Alchemy
+Essence Scatter
+Mistfire Adept
+Mind Control
+Merfolk Looter
+Marang River Prowler
+Mana Leak
+Living Tsunami
+Into the Roil
+Impaler Shrike
+Preordain
+Ponder
+Phantom Warrior
+Pantom Beast
+Phantasmal Dragon
+Phantasmal Bear
+Negate
+Murder of Crows
+Vapor Snag
+Treasure Cruise
+Think Twice
+Thassa's Emissary
+Talrand's Invocation
+Sigiled Starfish
+Sea Gate Oracle
+Quickling
+Murderous Redcap
+Infest
+Executioner's Capsule
+Dread Return
+Youthful Scholar
+Welkin Tern
+Water Servant
+Wall of Frost
+Bellowing Saddlebrute
+Assassinate
+Asphyxiate
+Arrogant Bloodlord
+Victimize
+Shriekmaw
+Nekrataal
+Diabolic Tutor
+Dead Weight
+Child of Night
+Chainder's Edict
+Brain Maggot
+Black Knight
+Bitter Revelation
+Geth's Verdict
+Gatekeeper of Malakir
+Exsangineate
+Doom Blade
+Dismember
+Disfigure
+Diregraf Ghoul
+Keepsake Gorgon
+Inquisiition of Kozilek
+Guul Draz Vampire
+Gurmage Angler
+Grasp of Darkness
+Go for the Throat
+Necrogen Scuder
+Murder
+Morkrut Banshee
+Moad of the Unhallowed
+Liliana's Specter
+Liliana's Shade
+Knight of Infamy
+Ruthless Ripper
+Ruthless Cullblade
+Read the Bones
+Rakshasa Gravecaller
+Pharika's Chosen
+Typhoid Rats
+Skinrender
+Skeletal Wurm
+Sign in Blood
+Sibsig Muckdraggers
+Vulturous Aven
+Vendetta
+Vampire Lacerator
+Ultimate Price
+Ulcerate
+Ukud Cobra
+Mogg War Marshal
+Goblin Bombardment
+Flametongue Kavu
+Faithless Looting
+Beetleback Chief
+Xathrid Slyblade
+Wretched Anruid
+Brimstone Mage
+Borderland Marauder
+Bloodcrazed Neonate
+Bathe in Dragonfire
+Arc Lightning
+Altac Bloodseeker
+Dragon Fodder
+Cunning Sparkmage
+Cone of Flame
+Chandra's Outrage
+Burst Lightning
+Brimstone Vollery
+Forge Devil
+Flames of the Firebrand
+Flame Slash
+Fireball
+Fiery Hellhound
+Ember Hauler
+Dragon Hatchling
+Goblin Tunneler
+Goblin Heelcutter
+Goblin Bangchuckers
+Generator Servant
+Furnace Whelp
+Frenzied Goblin
+Foundry Street Denizen
+Lightning Bolt
+Krenko's Command
+Krenko's Enforcer
+Koth's Courier
+Heat Ray
+Guttersnipe
+Goblin Wardriver
+Scourge of Geier Reach
+Rummaging Goblin
+Ruinous Minotaur
+Pyroclasm
+Paragon of Fierce Defiance
+Marading Maulhorn
+Lightning Strike
+Tourch Fiend
+Titan's Strength
+Thundering Giant
+Temur Battle Rage
+Stoneshock Giant
+Staggershock
+Shock
+Young Pyromancer
+Vulshok Refugee
+Volcanic Geyser
+Two-Headed Cerberus
+Trumpet Blast
+Tormenting Voice
+Tidehollow Sculler
+Windstorm
+Vines of Vastwood
+Travel Preparations
+Titanic Growth
+Dimir Aqueduct
+Boros Signet
+Bonesplitter
+Basalt Monolith
+Azorious Chancery
+Vitu-Ghazi Guildmage
+Life // Death
+Protect // Serve
+Wear // Tear
+Give // Take
+Fire // Ice
+Armed // Dangerous
+Far // Away
+Mind Stone
+Izzet Signet
+Gruul Turf
+Golgari Signet
+Evolving Wilds
+Everflowing Chalice
+Epochrasite
+Artisan of Kozilek
+Worn Powerstone
+Simic Signet
+Selesnya Sanctuary
+Rakdos Carnarium
+Orzhov Signet
+Mirrodin's Core
+Dreamstone Hedron
+Dread Statuary
+Dismal Backwater
+Darksteel Axe
+Chronomaton
+Buried Ruin
+Blossoming Sands
+Bloodfell Caves
+Tranquil Cove
+Thornwood Falls
+Terramorphic Expanse
+Tectonic Edge
+Swiftwater Cliffs
+Strider Harness
+Sphere of the Suns
+Signal Pest
+Hexplate Golem
+Ghost Quarter
+Frontier Bivouac
+Fireshrieker
+Explorer's Scope
+Pathrazer of Ulamog
+Opulent Palace
+Nomad Outpost
+Mystic Monastery
+Jungle Hollow
+Juggernaut
+Scoured Barrens
+Sandsteppe Citadel
+Rugged Highlands 
+Quicksand
+Prowler's Helm
+Pristine Talisman
+Wind-Scarred Crag
+Whispersilk Cloak
+Viridian Claw
+Ulamog's Crusher
+Tumble Magnet
+Trusty Machete
+Traveler's Amulate
+Avacyn's Pilgrim
+Arbor Elf
+Acidic Slim
+Abzan Beastmaster
+Masked Admirers
+Penumbra Spider
+Wood Elves
+Cultivate
+Cudgle Troll
+Briarpack Alpha
+Bramblecrush
+Bestial Menace
+Become Immense
+Beast Within
+Harrow
+Greater Basilisk
+Giant Growth
+Garruk's Companion
+Explore
+Duskdale Wurm
+Deadly Recluse
+Darkthicket Wolf
+Llanorar Elves
+Leatherback Baloth
+Kalonian Tusker
+Invasive Species
+Hunt the Weak
+Howl of the Night Pack
+Heir of the Wilds
+Nessian Game Warden
+Nemesis of Mortals
+Nature's Spirall
+Naturalize
+Mutagenic Growth
+Mold Shambler
+Prey Upon
+Pelaka Wurm
+Paragon of Eternl Wilds
+Overrun
+Oran-Rief Recluse
+Rier Boa 
+Reclamation Sage
+Rancor
+Rampant Growth
+Raised by Wolves
+Primal Huntbeast
+Thundering Tanadon
+Sylvan Ranger
+Stampeding Elk Heard
+Sedge Scorpion
+Scythe Tiger
+Savage Punch
+Rumbling Baloth
+Imperiasaur
+
