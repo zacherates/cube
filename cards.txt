@@ -1,17 +1,17 @@
 Arrest
-Arbelest Elite
+Arbalest Elite
 Alabaster Mage
 Ainok Bond-Kin
 Afterlife
 Accorder Paladin
-Condem
+Condemn
 Cloudgoat Ranger
 Cliff Threader
 Cavalry Pegasus
 Blinding Mage
 Banisher Priest
 Geist of the Moors
-Flickrwisp
+Flickerwisp
 Fiend Hunter
 Emerge Unscathed
 Elite Scaleguard
@@ -19,9 +19,9 @@ Inspired Charge
 Guardians' Pledge
 Guard Duty
 Gods Willing
-Glorius Charge
+Glorious Charge
 Glimmerpoint Stag
-Leonin Relic Warder
+Leonin Relic-Warder
 Kor Skyfisher
 Kor Hookmaster
 Knight of Glory
@@ -31,7 +31,7 @@ Oust
 Oblivion Ring
 Master of Diversion
 Marsh Threader
-Mardu Horde-Chief
+Mardu Hordechief
 Loxodon Partisan
 Lingering Souls
 Seraph of the Masses
@@ -39,7 +39,7 @@ Selfless Cathar
 Sandsteppe Outcast
 Sandblast
 Reprisal
-Poreclain Legonnaire
+Porcelain Legionnaire
 Pillar of Light
 Pacifism
 Valorous Stance
@@ -62,21 +62,21 @@ Mulldrifter
 Man-o'-War
 Impulse
 Favorable Winds
-Fact of Fiction
+Fact or Fiction
 Cancel
 Azure Mage
 Aven Surveyor
 Augur of Bolas
 Anticipate
 Air Servant
-AEther Adept
+Æther Adept
 Enclave Cryptologist
 Domestication
 Delver of Secrets
 Dakra Mystic
 Crippling Chill
 Courtly Provocateur
-Illusionary Angel
+Illusory Angel
 Horizon Drake
 Gurmag Drowner
 Gitaxian Probe
@@ -94,7 +94,7 @@ Impaler Shrike
 Preordain
 Ponder
 Phantom Warrior
-Pantom Beast
+Phantom Beast
 Phantasmal Dragon
 Phantasmal Bear
 Negate
@@ -125,27 +125,27 @@ Nekrataal
 Diabolic Tutor
 Dead Weight
 Child of Night
-Chainder's Edict
+Chainer's Edict
 Brain Maggot
 Black Knight
 Bitter Revelation
 Geth's Verdict
 Gatekeeper of Malakir
-Exsangineate
+Exsanguinate
 Doom Blade
 Dismember
 Disfigure
 Diregraf Ghoul
 Keepsake Gorgon
-Inquisiition of Kozilek
+Inquisition of Kozilek
 Guul Draz Vampire
-Gurmage Angler
+Gurmag Angler
 Grasp of Darkness
 Go for the Throat
-Necrogen Scuder
+Necrogen Scudder
 Murder
 Morkrut Banshee
-Moad of the Unhallowed
+Moan of the Unhallowed
 Liliana's Specter
 Liliana's Shade
 Knight of Infamy
@@ -171,7 +171,7 @@ Flametongue Kavu
 Faithless Looting
 Beetleback Chief
 Xathrid Slyblade
-Wretched Anruid
+Wretched Anurid
 Brimstone Mage
 Borderland Marauder
 Bloodcrazed Neonate
@@ -183,7 +183,7 @@ Cunning Sparkmage
 Cone of Flame
 Chandra's Outrage
 Burst Lightning
-Brimstone Vollery
+Brimstone Volley
 Forge Devil
 Flames of the Firebrand
 Flame Slash
@@ -210,9 +210,9 @@ Rummaging Goblin
 Ruinous Minotaur
 Pyroclasm
 Paragon of Fierce Defiance
-Marading Maulhorn
+Marauding Maulhorn
 Lightning Strike
-Tourch Fiend
+Torch Fiend
 Titan's Strength
 Thundering Giant
 Temur Battle Rage
@@ -234,7 +234,7 @@ Dimir Aqueduct
 Boros Signet
 Bonesplitter
 Basalt Monolith
-Azorious Chancery
+Azorius Chancery
 Vitu-Ghazi Guildmage
 Life // Death
 Protect // Serve
@@ -296,16 +296,16 @@ Viridian Claw
 Ulamog's Crusher
 Tumble Magnet
 Trusty Machete
-Traveler's Amulate
+Traveler's Amulet
 Avacyn's Pilgrim
 Arbor Elf
-Acidic Slim
+Acidic Slime
 Abzan Beastmaster
 Masked Admirers
 Penumbra Spider
 Wood Elves
 Cultivate
-Cudgle Troll
+Cudgel Troll
 Briarpack Alpha
 Bramblecrush
 Bestial Menace
@@ -319,7 +319,7 @@ Explore
 Duskdale Wurm
 Deadly Recluse
 Darkthicket Wolf
-Llanorar Elves
+Llanowar Elves
 Leatherback Baloth
 Kalonian Tusker
 Invasive Species
@@ -328,16 +328,16 @@ Howl of the Night Pack
 Heir of the Wilds
 Nessian Game Warden
 Nemesis of Mortals
-Nature's Spirall
+Nature's Spiral
 Naturalize
 Mutagenic Growth
 Mold Shambler
 Prey Upon
-Pelaka Wurm
-Paragon of Eternl Wilds
+Pelakka Wurm
+Paragon of Eternal Wilds
 Overrun
 Oran-Rief Recluse
-Rier Boa 
+River Boa 
 Reclamation Sage
 Rancor
 Rampant Growth
@@ -345,10 +345,15 @@ Raised by Wolves
 Primal Huntbeast
 Thundering Tanadon
 Sylvan Ranger
-Stampeding Elk Heard
+Stampeding Elk Herd
 Sedge Scorpion
 Scythe Tiger
 Savage Punch
 Rumbling Baloth
-Imperiasaur
-
+Imperiosaur
+Encroaching Wastes
+Elite Vanguard
+Cloistered Youth
+Vampire Nighthawk
+Sengir Vampire
+Gravedigger
