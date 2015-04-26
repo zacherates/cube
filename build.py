@@ -67,11 +67,10 @@ def main():
 
 	for name in lines():
 		card = get_card(name)
-		#print name, card
 		if card:
 			get_section(card).append(card)
 		else:
-			print >> sys.stderr, name
+			raise Error("Missing card: " + name)
 
 
 	for section in wubrg:

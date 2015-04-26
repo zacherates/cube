@@ -238,9 +238,7 @@ Azorius Chancery
 Vitu-Ghazi Guildmage
 Life // Death
 Protect // Serve
-Wear // Tear
 Give // Take
-Fire // Ice
 Armed // Dangerous
 Far // Away
 Mind Stone
@@ -357,3 +355,5 @@ Cloistered Youth
 Vampire Nighthawk
 Sengir Vampire
 Gravedigger
+Electrolyze
+Lightning Helix
