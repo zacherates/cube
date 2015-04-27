@@ -1,5 +1,6 @@
 import codecs
 import json
+import pdb
 import sys
 
 def main():
@@ -70,7 +71,7 @@ def main():
 		if card:
 			get_section(card).append(card)
 		else:
-			raise Error("Missing card: " + name)
+			raise NameError("Missing card: " + name)
 
 
 	for section in wubrg:
@@ -78,15 +79,51 @@ def main():
 
 	print "\n\n"
 
+
 	for section in wubrg:
 		print "{0} ({1})".format(section, len(sections[section]))
 		print "--------"
 		show(sections[section])
 		print "\n"
 
-def show(section):
+	def render(template, out = sys.stdout):
+		if isinstance(template, basestring):
+			out.write(template)
+		else:
+			for part in template:
+				render(part, out = out)
+
+	def gallery(sections):
+		yield gallery_head()
+		for section in wubrg:
+			yield gallery_section(sections[section])
+		yield gallery_foot()
+
+	with codecs.open("out/gallery.html", "w", 'utf-8') as html:
+		render(gallery(sections), out = html)
+		
+def gallery_head():
+	yield """<!DOCTYPE html>
+		<html>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="../styles.css">
+			<div class="gallery">
+	"""
+
+def gallery_foot():
+	yield """
+			</div>
+		</html>
+	"""
+
+
+def gallery_section(section):
 	cards = sorted(section, key = lambda card: card['name'])
-	print "\n".join(card['name'] for card in cards)
+	yield "\n".join(u'<img class="card" src="http://api.mtgdb.info/content/card_images/{0}.jpeg" alt="{1}">'.format(card.get('multiverseid'), card.get("name")) for card in cards)
+
+def show(section, out = sys.stdout):
+	cards = sorted(section, key = lambda card: card['name'])
+	print >> out, "\n".join(card['name'] for card in cards)
 
 def lines():
 	with codecs.open("cards.txt", "r", "utf-8") as f:
