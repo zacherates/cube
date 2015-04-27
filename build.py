@@ -10,8 +10,9 @@ def main():
 	cards = {}
 	for expansion in sets:
 		for card in sets[expansion]['cards']:
-			name = card['name']
-			cards[name] = card
+			if 'multiverseid' in card:
+				name = card['name']
+				cards[name] = card
 
 	print str(cards)[:256]
 
@@ -31,7 +32,6 @@ def main():
 	def get_card(name):
 		if "//" in name:
 			halves = [cards.get(part.strip()) for part in name.split("//")]
-			print halves
 
 			def fuse(name):
 				return list(set(halves[0][name] + halves[1][name]))
@@ -39,7 +39,8 @@ def main():
 			return {
 				'name': name,
 				'types': fuse('types'),
-				'colors': fuse('colors')
+				'colors': fuse('colors'),
+				'multiverseid': halves[0]['multiverseid']
 			}
 
 		return cards.get(name)
@@ -119,7 +120,7 @@ def gallery_foot():
 
 def gallery_section(section):
 	cards = sorted(section, key = lambda card: card['name'])
-	yield "\n".join(u'<img class="card" src="http://api.mtgdb.info/content/card_images/{0}.jpeg" alt="{1}">'.format(card.get('multiverseid'), card.get("name")) for card in cards)
+	yield "\n".join(u'<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}"><img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}"></a>'.format(card.get('multiverseid'), card.get("name")) for card in cards)
 
 def show(section, out = sys.stdout):
 	cards = sorted(section, key = lambda card: card['name'])
