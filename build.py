@@ -1,6 +1,7 @@
 import codecs
 import json
 import pdb
+import re
 import sys
 
 def main():
@@ -13,8 +14,6 @@ def main():
 			if 'multiverseid' in card:
 				name = card['name']
 				cards[name] = card
-
-	print str(cards)[:256]
 
 	def get_section(card):
 		if "Land" in card['types']:
@@ -68,11 +67,14 @@ def main():
 	wubrg = "WUBRGMCL"
 
 	for name in lines():
+		match = re.match(r"^\s*([^#]*)\s*(?:#(\w+)\s*)*$", name)
+		name, tags = match.groups()
+		name = name.strip()
 		card = get_card(name)
 		if card:
 			get_section(card).append(card)
 		else:
-			raise NameError("Missing card: " + name)
+			raise NameError("Missing card: '{0}'".format(name))
 
 
 	for section in wubrg:
