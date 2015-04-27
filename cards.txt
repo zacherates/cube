@@ -1,5 +1,6 @@
+Abzan Falconer
 Arrest
-Arbalest Elite
+Abzan Battle Priest
 Alabaster Mage
 Ainok Bond-Kin
 Afterlife
@@ -7,7 +8,7 @@ Accorder Paladin
 Condemn
 Cloudgoat Ranger
 Cliff Threader
-Cavalry Pegasus
+Sandcrafter Mage
 Blinding Mage
 Banisher Priest
 Geist of the Moors
@@ -40,7 +41,7 @@ Sandsteppe Outcast
 Sandblast
 Reprisal
 Porcelain Legionnaire
-Pillar of Light
+Suspension Field
 Pacifism
 Valorous Stance
 Triplicate Spirits
@@ -56,7 +57,7 @@ Brainstorm
 White Knight
 War Priest of Thune
 Wandering Champion
-Wall of Swords
+Feat of Resistance
 Riftwing Cloudskate
 Mulldrifter
 Man-o'-War
@@ -116,8 +117,8 @@ Welkin Tern
 Water Servant
 Wall of Frost
 Bellowing Saddlebrute
-Assassinate
-Asphyxiate
+Murderous Cut
+Dead Drop
 Arrogant Bloodlord
 Victimize
 Shriekmaw
@@ -153,7 +154,7 @@ Ruthless Ripper
 Ruthless Cullblade
 Read the Bones
 Rakshasa Gravecaller
-Pharika's Chosen
+Hand of Silumgar
 Typhoid Rats
 Skinrender
 Skeletal Wurm
@@ -171,7 +172,7 @@ Flametongue Kavu
 Faithless Looting
 Beetleback Chief
 Xathrid Slyblade
-Wretched Anurid
+Battle Brawler
 Brimstone Mage
 Borderland Marauder
 Bloodcrazed Neonate
@@ -181,16 +182,16 @@ Altac Bloodseeker
 Dragon Fodder
 Cunning Sparkmage
 Cone of Flame
-Chandra's Outrage
+Roast
 Burst Lightning
 Brimstone Volley
 Forge Devil
-Flames of the Firebrand
+Sarkhan's Rage
 Flame Slash
 Fireball
 Fiery Hellhound
 Ember Hauler
-Dragon Hatchling
+Shockmaw Dragon
 Goblin Tunneler
 Goblin Heelcutter
 Goblin Bangchuckers
@@ -201,8 +202,8 @@ Foundry Street Denizen
 Lightning Bolt
 Krenko's Command
 Krenko's Enforcer
-Koth's Courier
-Heat Ray
+Hordeling Outburst
+Twin Bolt
 Guttersnipe
 Goblin Wardriver
 Scourge of Geier Reach
@@ -221,8 +222,8 @@ Staggershock
 Shock
 Young Pyromancer
 Vulshok Refugee
-Volcanic Geyser
-Two-Headed Cerberus
+Pyrotechnics
+War-Name Aspirant
 Trumpet Blast
 Tormenting Voice
 Tidehollow Sculler
@@ -238,7 +239,7 @@ Azorius Chancery
 Vitu-Ghazi Guildmage
 Life // Death
 Protect // Serve
-Give // Take
+Icefeather Aven
 Armed // Dangerous
 Far // Away
 Mind Stone
@@ -330,7 +331,7 @@ Nature's Spiral
 Naturalize
 Mutagenic Growth
 Mold Shambler
-Prey Upon
+Epic Confrontation
 Pelakka Wurm
 Paragon of Eternal Wilds
 Overrun
@@ -341,13 +342,13 @@ Rancor
 Rampant Growth
 Raised by Wolves
 Primal Huntbeast
-Thundering Tanadon
+Tuskguard Captain
 Sylvan Ranger
 Stampeding Elk Herd
 Sedge Scorpion
 Scythe Tiger
 Savage Punch
-Rumbling Baloth
+Temur Sabertooth
 Imperiosaur
 Encroaching Wastes
 Elite Vanguard
