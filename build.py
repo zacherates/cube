@@ -1,8 +1,11 @@
 import codecs
+import datetime
 import json
 import pdb
 import re
 import sys
+
+from paver.easy import *
 
 def main():
 	with open("AllSets.json") as f:
@@ -110,18 +113,20 @@ def main():
 			yield gallery_section(sections[section])
 		yield gallery_foot()
 
-	with codecs.open("out/gallery.html", "w", 'utf-8') as html:
+	with codecs.open("out/index.html", "w", 'utf-8') as html:
 		render(gallery(sections), out = html)
+
+        package()
 		
 def gallery_head():
 	yield """<!DOCTYPE html>
 		<html>
 			<meta charset="utf-8">
                         <title>Aaron's Peasant Cube</title>
-                        <script src="../media/jquery-2.1.4.js"></script>
-                        <script src="../media/cube.js"></script>
+                        <script src="media/jquery-2.1.4.js"></script>
+                        <script src="media/cube.js"></script>
 
-			<link rel="stylesheet" href="../media/styles.css">
+			<link rel="stylesheet" href="media/styles.css">
 
                         <div class="header">
                             <ul>
@@ -186,6 +191,14 @@ def lines():
 		lines = f.readlines()
 
 	return [line.strip() for line in lines]
+
+def package():
+    ID = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    target = path("dist") / "cube_{0}".format(ID)
+    sh("mkdir -p " + target)
+    sh("cp -r media out/index.html " + target)
+    sh("cd dist && tar -czvf {0}.tar.gz {0}".format(target.name))
+
 
 if __name__ == "__main__":
 	main()
