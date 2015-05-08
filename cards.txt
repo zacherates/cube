@@ -135,7 +135,7 @@ Gatekeeper of Malakir #removal
 Curse of Shallow Graves
 Doom Blade #removal
 Dismember #removal
-Hymm to Tourach
+Hymn to Tourach
 Diregraf Ghoul
 Keepsake Gorgon
 Inquisition of Kozilek
@@ -262,7 +262,7 @@ Arcane Sanctum
 Grafted Wargear
 Chronomaton
 Buried Ruin
-Crumblind Necropolis
+Crumbling Necropolis
 Jungle Shrine
 Seaside Citadel
 Thornwood Falls

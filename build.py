@@ -64,6 +64,13 @@ def main():
 		"Land": "L",
 	}
 
+	def stat(name):
+		def counter(cards):
+			return sum(1 for card in cards if name in card['types'])
+		return counter
+
+	creatures = stat("Creature")
+
 	wubrg = "WUBRGMCL"
 
 	for name in lines():
@@ -84,9 +91,10 @@ def main():
 
 
 	for section in wubrg:
-		print "{0} ({1})".format(section, len(sections[section]))
+		cards = sections[section]
+		print "{0} ({1}, {2})".format(section, len(cards), creatures(cards))
 		print "--------"
-		show(sections[section])
+		show(cards)
 		print "\n"
 
 	def render(template, out = sys.stdout):
@@ -109,8 +117,23 @@ def gallery_head():
 	yield """<!DOCTYPE html>
 		<html>
 			<meta charset="utf-8">
-			<link rel="stylesheet" href="../styles.css">
-			<div class="gallery">
+                        <script src="../media/jquery-2.1.4.js"></script>
+                        <script src="../media/cube.js"></script>
+
+			<link rel="stylesheet" href="../media/styles.css">
+
+                        <div class="header">
+                            <ul>
+                                <li><a id="all" href="javascript:void(0)">All</a></li>
+                                <li><a id="creature" href="javascript:void(0)">Creatures</a></li>
+                                <li><a id="instant" href="javascript:void(0)">Instants</a></li>
+                                <li><a id="sorcery" href="javascript:void(0)">Sorceries</a></li>
+                                <li><a id="enchantment" href="javascript:void(0)">Enchantments</a></li>
+                                <li><a id="artifact" href="javascript:void(0)">Artifacts</a></li>
+                                <li><a id="land" href="javascript:void(0)">Lands</a></li>
+                            </ul>
+                        </div>
+                        <div class="gallery">
 	"""
 
 def gallery_foot():
@@ -122,7 +145,14 @@ def gallery_foot():
 
 def gallery_section(section):
 	cards = sorted(section, key = lambda card: card['name'])
-	yield "\n".join(u'<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}"><img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}"></a>'.format(card.get('multiverseid'), card.get("name")) for card in cards)
+        tmpl = u'''<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}" class="{2}">
+            <img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}">
+        </a>''' 
+
+        def types(card):
+            return u' '.join(card.get('types', [])).lower()
+
+	yield "\n".join(tmpl.format(card.get('multiverseid'), card.get("name"), types(card)) for card in cards)
 
 def show(section, out = sys.stdout):
 	cards = sorted(section, key = lambda card: card['name'])
