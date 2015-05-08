@@ -1,150 +1,150 @@
 Abzan Falconer
-Arrest
+Arrest #removal
 Abzan Battle Priest
 Alabaster Mage
 Ainok Bond-Kin
-Afterlife
+Swords to Plowshares
 Accorder Paladin
-Condemn
+Condemn #removal
 Cloudgoat Ranger
 Cliff Threader
 Sandcrafter Mage
 Blinding Mage
-Banisher Priest
+Banisher Priest #removal
 Geist of the Moors
 Flickerwisp
 Fiend Hunter
-Emerge Unscathed
+Emerge Unscathed #trick
 Elite Scaleguard
 Inspired Charge
 Guardians' Pledge
-Guard Duty
-Gods Willing
+Guard Duty #removal
+Gods Willing #trick
 Glorious Charge
 Glimmerpoint Stag
 Leonin Relic-Warder
 Kor Skyfisher
 Kor Hookmaster
 Knight of Glory
-Kill Shot
-Journey to Nowhere
-Oust
-Oblivion Ring
+Kill Shot #removal
+Journey to Nowhere #removal
+Oust #removal
+Oblivion Ring #removal
 Master of Diversion
 Marsh Threader
-Mardu Hordechief
-Loxodon Partisan
-Lingering Souls
-Seraph of the Masses
+Mardu Hordechief #tokens
+Pianna, Nomad Captain
+Lingering Souls #tokens
+Ornitharch
 Selfless Cathar
-Sandsteppe Outcast
-Sandblast
-Reprisal
+Sandsteppe Outcast #tokens
+Sandblast #removal
+Reprisal #removal
 Porcelain Legionnaire
-Suspension Field
-Pacifism
-Valorous Stance
-Triplicate Spirits
+Suspension Field #removal
+Pacifism #removal
+Valorous Stance #removal
+Triplicate Spirits #tokens
 Steppe Lynx
-Spectral Procession
-Smite
+Spectral Procession #tokens
+Smite #removal
 Silverchase Fox
 Serra Angel
 Errant Ephemeron
-Deep Analysis
-Compulsive Research
-Brainstorm
+Deep Analysis #draw
+Compulsive Research #draw
+Brainstorm #draw
 White Knight
 War Priest of Thune
 Wandering Champion
-Feat of Resistance
-Riftwing Cloudskate
-Mulldrifter
-Man-o'-War
-Impulse
+Feat of Resistance #trick
+Riftwing Cloudskate #bounce
+Mulldrifter #draw
+Man-o'-War #bounce
+Impulse #draw
 Favorable Winds
-Fact or Fiction
-Cancel
+Fact or Fiction #draw
+Counterspell
 Azure Mage
-Aven Surveyor
-Augur of Bolas
-Anticipate
+Aven Surveyor #bounce
+Augur of Bolas #draw
+Anticipate #draw
 Air Servant
 Æther Adept
-Enclave Cryptologist
+Enclave Cryptologist #draw
 Domestication
 Delver of Secrets
-Dakra Mystic
+Looter il-Kor
 Crippling Chill
-Courtly Provocateur
+Waterfront Bouncer
 Illusory Angel
 Horizon Drake
 Gurmag Drowner
 Gitaxian Probe
 Frost Lynx
-Forbidden Alchemy
+Forbidden Alchemy #draw
 Essence Scatter
 Mistfire Adept
 Mind Control
-Merfolk Looter
+Merfolk Looter #draw
 Marang River Prowler
 Mana Leak
 Living Tsunami
 Into the Roil
 Impaler Shrike
-Preordain
-Ponder
+Preordain #cantrip
+Ponder #cantrip
 Phantom Warrior
 Phantom Beast
 Phantasmal Dragon
 Phantasmal Bear
 Negate
 Murder of Crows
-Vapor Snag
-Treasure Cruise
-Think Twice
+Vapor Snag #bounce
+Treasure Cruise #draw
+Control Magic
 Thassa's Emissary
-Talrand's Invocation
+Talrand's Invocation #tokens
 Sigiled Starfish
-Sea Gate Oracle
+Sea Gate Oracle #cantrip
 Quickling
-Murderous Redcap
-Infest
-Executioner's Capsule
+Murderous Redcap #burn
+Infest #wrath
+Executioner's Capsule #removal
 Dread Return
-Youthful Scholar
+Youthful Scholar #draw
 Welkin Tern
 Water Servant
 Wall of Frost
 Bellowing Saddlebrute
-Murderous Cut
-Dead Drop
+Murderous Cut #removal
+Dead Drop #removal
 Arrogant Bloodlord
 Victimize
-Shriekmaw
-Nekrataal
+Shriekmaw #removal
+Nekrataal #removal
 Diabolic Tutor
-Dead Weight
+Dead Weight #removal
 Child of Night
-Chainer's Edict
+Chainer's Edict #removal
 Brain Maggot
 Black Knight
-Bitter Revelation
-Geth's Verdict
-Gatekeeper of Malakir
-Exsanguinate
-Doom Blade
-Dismember
-Disfigure
+Bitter Revelation #draw
+Geth's Verdict #removal
+Gatekeeper of Malakir #removal
+Curse of Shallow Graves
+Doom Blade #removal
+Dismember #removal
+Hymm to Tourach
 Diregraf Ghoul
 Keepsake Gorgon
 Inquisition of Kozilek
 Guul Draz Vampire
 Gurmag Angler
-Grasp of Darkness
-Go for the Throat
+Grasp of Darkness #removal
+Go for the Throat #removal
 Necrogen Scudder
-Murder
+Murder #removal
 Morkrut Banshee
 Moan of the Unhallowed
 Liliana's Specter
@@ -152,132 +152,132 @@ Liliana's Shade
 Knight of Infamy
 Ruthless Ripper
 Ruthless Cullblade
-Read the Bones
+Read the Bones #draw
 Rakshasa Gravecaller
 Hand of Silumgar
 Typhoid Rats
 Skinrender
 Skeletal Wurm
-Sign in Blood
-Sibsig Muckdraggers
+Sign in Blood #draw
+Kezzerdrix
 Vulturous Aven
-Vendetta
+Vendetta #removal
 Vampire Lacerator
-Ultimate Price
-Ulcerate
+Ultimate Price #removal
+Ulcerate #removal
 Ukud Cobra
-Mogg War Marshal
-Goblin Bombardment
+Mogg War Marshal #tokens
+Goblin Bombardment #burn
 Flametongue Kavu
-Faithless Looting
-Beetleback Chief
+Faithless Looting #draw
+Beetleback Chief #tokens
 Xathrid Slyblade
 Battle Brawler
 Brimstone Mage
 Borderland Marauder
 Bloodcrazed Neonate
-Bathe in Dragonfire
-Arc Lightning
+Bathe in Dragonfire #burn
+Arc Lightning #burn
 Altac Bloodseeker
-Dragon Fodder
+Dragon Fodder #tokens
 Cunning Sparkmage
-Cone of Flame
-Roast
-Burst Lightning
-Brimstone Volley
+Cone of Flame #burn
+Roast #burn
+Burst Lightning #burn
+Brimstone Volley #burn
 Forge Devil
-Sarkhan's Rage
-Flame Slash
+Sarkhan's Rage #burn
+Flame Slash #burn
 Fireball
 Fiery Hellhound
 Ember Hauler
 Shockmaw Dragon
-Goblin Tunneler
+Lightning Mauler
 Goblin Heelcutter
 Goblin Bangchuckers
+Dragon Whelp
 Generator Servant
-Furnace Whelp
 Frenzied Goblin
 Foundry Street Denizen
-Lightning Bolt
-Krenko's Command
+Lightning Bolt #burn
+Krenko's Command #tokens
 Krenko's Enforcer
-Hordeling Outburst
-Twin Bolt
+Hordeling Outburst #tokens
+Twin Bolt #burn
 Guttersnipe
 Goblin Wardriver
 Scourge of Geier Reach
-Rummaging Goblin
+Rummaging Goblin #draw
 Ruinous Minotaur
-Pyroclasm
+Pyroclasm #wrath
 Paragon of Fierce Defiance
 Marauding Maulhorn
-Lightning Strike
-Torch Fiend
-Titan's Strength
+Lightning Strike #burn
+Gore-House Chainwalker
+Titan's Strength #trick
 Thundering Giant
-Temur Battle Rage
+Temur Battle Rage #trick
 Stoneshock Giant
-Staggershock
-Shock
-Young Pyromancer
+Staggershock #burn
+Shock #burn
+Young Pyromancer #tokens
 Vulshok Refugee
-Pyrotechnics
+Pyrotechnics #burn
 War-Name Aspirant
-Trumpet Blast
-Tormenting Voice
+Trumpet Blast #trick
+Tormenting Voice #draw
 Tidehollow Sculler
-Windstorm
-Vines of Vastwood
+Windstorm #wrath
+Vines of Vastwood #trick
 Travel Preparations
-Titanic Growth
+Titanic Growth #trick
 Dimir Aqueduct
-Boros Signet
+Boros Signet #ramp
 Bonesplitter
-Basalt Monolith
+Basalt Monolith #ramp
 Azorius Chancery
-Vitu-Ghazi Guildmage
+Kitchen Finks
 Life // Death
 Protect // Serve
 Icefeather Aven
 Armed // Dangerous
 Far // Away
-Mind Stone
-Izzet Signet
+Mind Stone #ramp
+Izzet Signet #ramp
 Gruul Turf
-Golgari Signet
+Golgari Signet #ramp
 Evolving Wilds
-Everflowing Chalice
+Everflowing Chalice #ramp
 Epochrasite
 Artisan of Kozilek
-Worn Powerstone
-Simic Signet
+Worn Powerstone #ramp
+Simic Signet #ramp
 Selesnya Sanctuary
 Rakdos Carnarium
 Orzhov Signet
-Mirrodin's Core
-Dreamstone Hedron
+Mirrodin's Core #ramp
+Sol Ring
 Dread Statuary
-Dismal Backwater
-Darksteel Axe
+Arcane Sanctum
+Grafted Wargear
 Chronomaton
 Buried Ruin
-Blossoming Sands
-Bloodfell Caves
-Tranquil Cove
+Crumblind Necropolis
+Jungle Shrine
+Seaside Citadel
 Thornwood Falls
 Terramorphic Expanse
 Tectonic Edge
 Swiftwater Cliffs
-Strider Harness
-Sphere of the Suns
+Swiftfoot Boots
+Sphere of the Suns #ramp
 Signal Pest
 Hexplate Golem
 Ghost Quarter
 Frontier Bivouac
 Fireshrieker
-Explorer's Scope
-Pathrazer of Ulamog
+Explorer's Scope #ramp
+Skullclamp
 Opulent Palace
 Nomad Outpost
 Mystic Monastery
@@ -285,69 +285,69 @@ Jungle Hollow
 Juggernaut
 Scoured Barrens
 Sandsteppe Citadel
-Rugged Highlands 
+Savage Lands
 Quicksand
 Prowler's Helm
-Pristine Talisman
+Pristine Talisman #ramp
 Wind-Scarred Crag
 Whispersilk Cloak
 Viridian Claw
 Ulamog's Crusher
 Tumble Magnet
 Trusty Machete
-Traveler's Amulet
-Avacyn's Pilgrim
-Arbor Elf
+Mishra's Factory
+Joraga Treespeaker
+Elvish Mystic
 Acidic Slime
 Abzan Beastmaster
 Masked Admirers
 Penumbra Spider
 Wood Elves
-Cultivate
+Cultivate #ramp
 Cudgel Troll
 Briarpack Alpha
-Bramblecrush
-Bestial Menace
-Become Immense
+Squirrel Nest
+Bestial Menace #tokens
+Become Immense #trick
 Beast Within
-Harrow
-Greater Basilisk
-Giant Growth
+Harrow #ramp
+Erhnam Djinn
+Giant Growth #trick
 Garruk's Companion
-Explore
+Sakura-Tribe Elder
 Duskdale Wurm
 Deadly Recluse
 Darkthicket Wolf
-Llanowar Elves
+Llanowar Elves #ramp
 Leatherback Baloth
 Kalonian Tusker
 Invasive Species
-Hunt the Weak
-Howl of the Night Pack
+Hunt the Weak #fight
+Howl of the Night Pack #tokens
 Heir of the Wilds
 Nessian Game Warden
 Nemesis of Mortals
-Nature's Spiral
+Regrowth
 Naturalize
-Mutagenic Growth
+Mutagenic Growth #trick
 Mold Shambler
-Epic Confrontation
+Epic Confrontation #fight
 Pelakka Wurm
 Paragon of Eternal Wilds
-Overrun
+Overrun #trick
 Oran-Rief Recluse
 River Boa 
 Reclamation Sage
 Rancor
-Rampant Growth
-Raised by Wolves
-Primal Huntbeast
+Rampant Growth #ramp
+Raised by Wolves #tokens
+Grizzly Fate
 Tuskguard Captain
-Sylvan Ranger
+Sylvan Ranger #ramp
 Stampeding Elk Herd
 Sedge Scorpion
 Scythe Tiger
-Savage Punch
+Savage Punch #fight
 Temur Sabertooth
 Imperiosaur
 Encroaching Wastes
