@@ -117,6 +117,7 @@ def gallery_head():
 	yield """<!DOCTYPE html>
 		<html>
 			<meta charset="utf-8">
+                        <title>Aaron's Peasant Cube</title>
                         <script src="../media/jquery-2.1.4.js"></script>
                         <script src="../media/cube.js"></script>
 
@@ -124,20 +125,31 @@ def gallery_head():
 
                         <div class="header">
                             <ul>
-                                <li><a id="all" href="javascript:void(0)">All</a></li>
-                                <li><a id="creature" href="javascript:void(0)">Creatures</a></li>
-                                <li><a id="instant" href="javascript:void(0)">Instants</a></li>
-                                <li><a id="sorcery" href="javascript:void(0)">Sorceries</a></li>
-                                <li><a id="enchantment" href="javascript:void(0)">Enchantments</a></li>
-                                <li><a id="artifact" href="javascript:void(0)">Artifacts</a></li>
-                                <li><a id="land" href="javascript:void(0)">Lands</a></li>
+                                <li><a class="selected" id="all" href="javascript:void(0)">All</a></li>
+                                <li><a id="creature" data-type="type" href="javascript:void(0)">Creatures</a></li>
+                                <li><a id="instant" data-type="type" href="javascript:void(0)">Instants</a></li>
+                                <li><a id="sorcery" data-type="type" href="javascript:void(0)">Sorceries</a></li>
+                                <li><a id="enchantment" data-type="type" href="javascript:void(0)">Enchantments</a></li>
+                                <li><a id="artifact" data-type="type" href="javascript:void(0)">Artifacts</a></li>
+                                <li><a id="land" data-type="type" href="javascript:void(0)">Lands</a></li>
+                                <li><a id="white" data-type="color" href="javascript:void(0)">White</a></li>
+                                <li><a id="blue" data-type="color" href="javascript:void(0)">Blue</a></li>
+                                <li><a id="black" data-type="color" href="javascript:void(0)">Black</a></li>
+                                <li><a id="red" data-type="color" href="javascript:void(0)">Red</a></li>
+                                <li><a id="green" data-type="color" href="javascript:void(0)">Green</a></li>
+                                <li><a id="multi" data-type="color" href="javascript:void(0)">Multi</a></li>
+                                <li><a id="colorless" data-type="color" href="javascript:void(0)">Colorless</a></li>
                             </ul>
                         </div>
-                        <div class="gallery">
+                        <div id="gallery">
+                            <div id="color-filter" class="filter">
+                            <div id="type-filter" class="filter">
 	"""
 
 def gallery_foot():
 	yield """
+                            </div>
+                            </div>
 			</div>
 		</html>
 	"""
@@ -145,12 +157,23 @@ def gallery_foot():
 
 def gallery_section(section):
 	cards = sorted(section, key = lambda card: card['name'])
-        tmpl = u'''<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}" class="{2}">
-            <img class="card" src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}">
+        tmpl = u'''<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}" class="card {2}">
+            <img src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}">
         </a>''' 
 
+        def colors(card):
+            colors = card.get('colors')
+            if not colors or len(colors) < 1:
+                return "colorless"
+
+            if len(colors) > 1:
+                return "multi"
+
+            return colors[0]
+
+
         def types(card):
-            return u' '.join(card.get('types', [])).lower()
+            return u' '.join(card.get('types', []) + [colors(card)]).lower()
 
 	yield "\n".join(tmpl.format(card.get('multiverseid'), card.get("name"), types(card)) for card in cards)
 

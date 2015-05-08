@@ -1,8 +1,10 @@
 body {
-	background-color: green;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
 }
 
-.card {
+.card img {
 	width: 223px;
 	height: 311px;
 }
@@ -14,25 +16,49 @@ body {
 
 .header li {
 	display: inline;
+	margin-right: 0.5em;
 }
 
-.no-creatures .creature { display: none; }
-.no-instants .instant { display: none; }
-.no-sorcerys .sorcery { display: none; }
-.no-enchantments .enchantment { display: none; }
-.no-artifacts .artifact { display: none; }
-.no-lands .land { display: none; }
+.header a {
+	text-decoration: none;
+	color: black;
+}
+
+.selected {
+	font-weight: bold;
+}
+
+
+.filtered .card {
+	display: none;
+}
+
+.whites .white,
+.blues .blue,
+.blacks .black,
+.reds .red,
+.greens .green,
+.multis .multi,
+.colorlesss .colorless,
+.creatures .creature, 
+.instants .instant, 
+.sorcerys .sorcery,
+.enchantments .enchantment,
+.artifacts .artifact, 
+.lands .land {
+	display: inline-block; 
+}
 
 .header {
     position: fixed;
     background: white;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     left: 0;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #777;
 }
 
-.gallery {
+#gallery {
 	margin-top: 60px;
 }
