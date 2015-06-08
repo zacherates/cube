@@ -265,10 +265,10 @@ Buried Ruin
 Crumbling Necropolis
 Jungle Shrine
 Seaside Citadel
-Thornwood Falls
-Terramorphic Expanse
+Simic Growth Chamber #fixing
+Terramorphic Expanse #fixing
 Tectonic Edge
-Swiftwater Cliffs
+Izzet Boilerworks #fixing
 Swiftfoot Boots
 Sphere of the Suns #ramp
 Signal Pest
@@ -281,15 +281,15 @@ Skullclamp
 Opulent Palace
 Nomad Outpost
 Mystic Monastery
-Jungle Hollow
+Golgari Rot Farm #fixing
 Juggernaut
-Scoured Barrens
+Orzhov Basilica #fixing
 Sandsteppe Citadel
 Savage Lands
 Quicksand
 Prowler's Helm
 Pristine Talisman #ramp
-Wind-Scarred Crag
+Boros Garrison #fixing
 Whispersilk Cloak
 Viridian Claw
 Ulamog's Crusher
