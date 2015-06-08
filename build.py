@@ -42,6 +42,7 @@ def main():
 				'name': name,
 				'types': fuse('types'),
 				'colors': fuse('colors'),
+				'cmc': halves[0]['cmc'] + halves[1]['cmc'],
 				'multiverseid': halves[0]['multiverseid']
 			}
 
@@ -65,7 +66,11 @@ def main():
 		"Red": "R",
 		"Green": "G",
 		"Land": "L",
+		"Colourless": "C",
+		"Multi-colour": "M",
 	}
+
+	abbreviations_reverse = dict((v, k) for (k, v) in abbreviations.items())
 
 	def stat(name):
 		def counter(cards):
@@ -73,6 +78,9 @@ def main():
 		return counter
 
 	creatures = stat("Creature")
+	instants = stat("Instant")
+	sorceries = stat("Sorcery")
+	enchantment = stat("Enchantment")
 
 	wubrg = "WUBRGMCL"
 
@@ -113,10 +121,57 @@ def main():
 			yield gallery_section(sections[section])
 		yield gallery_foot()
 
+	def histogram(samples):
+		results = [0] * 10
+		for sample in samples:
+			index = sample if sample < len(results) else -1
+			results[index] += 1
+		return results[1:]
+
+	def curve(cards):
+		return histogram(card.get('cmc', 0) for card in cards)
+
+	def power(cards):
+		return histogram(int(card.get('power', 0)) for card in cards)
+
+	def creature_curve(cards):
+		return curve(card for card in cards if 'Creature' in card.get('types', []))
+
+	def stats(sections):
+		yield '<script src="../media/jquery-2.1.4.js"></script>'
+		yield '<script src="../media/jquery.sparkline-2.1.2.js"></script>'
+		yield '<link rel="stylesheet" href="../media/styles.css">'
+		yield "<table id='stats'>"
+		yield "<tr><th>Color</th><th>Creatures</th><th>Instants</th><th>Sorceries</th><th>Enchantments</th><th>Total</th><th>Curve</th><th>(Creatures)</th></tr>"
+		for section in wubrg:
+			cards = sections[section]
+			name = abbreviations_reverse[section]
+			yield '''<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td>
+				<td><span class="inlinesparkline">{6}</span></td>
+				<td><span class="inlinesparkline">{7}</span></td>
+				<td><span class="inlinesparkline">{8}</span></td>
+			</tr>
+			'''.format(name, 
+					creatures(cards), 
+					instants(cards), 
+					sorceries(cards), 
+					enchantment(cards), 
+					len(cards), 
+					",".join(str(card) for card in curve(cards)), 
+					",".join(str(card) for card in creature_curve(cards)),
+					",".join(str(card) for card in power(cards)))
+		yield "</table>"
+		yield '<script src="../media/stats.js"></script>'
+
 	with codecs.open("out/index.html", "w", 'utf-8') as html:
 		render(gallery(sections), out = html)
 
-        package()
+	with codecs.open("out/stats.html", "w", 'utf-8') as stats_html:
+		render(stats(sections), out = stats_html)
+
+	package()
+
+
 		
 def gallery_head():
 	yield """<!DOCTYPE html>

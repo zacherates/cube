@@ -62,3 +62,7 @@ body {
 #gallery {
 	margin-top: 60px;
 }
+
+#stats {
+	text-align: left;
+}
