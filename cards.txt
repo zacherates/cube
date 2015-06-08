@@ -7,7 +7,7 @@ Swords to Plowshares
 Accorder Paladin
 Condemn #removal
 Cloudgoat Ranger
-Cliff Threader
+Mardu Woe-Reaper
 Sandcrafter Mage
 Blinding Mage
 Banisher Priest #removal
@@ -31,7 +31,7 @@ Journey to Nowhere #removal
 Oust #removal
 Oblivion Ring #removal
 Master of Diversion
-Marsh Threader
+Dragon Hunter
 Mardu Hordechief #tokens
 Pianna, Nomad Captain
 Lingering Souls #tokens
@@ -67,7 +67,7 @@ Fact or Fiction #draw
 Counterspell
 Azure Mage
 Aven Surveyor #bounce
-Augur of Bolas #draw
+Omenspeaker
 Anticipate #draw
 Air Servant
 Æther Adept
@@ -139,7 +139,7 @@ Hymn to Tourach
 Diregraf Ghoul
 Keepsake Gorgon
 Inquisition of Kozilek
-Guul Draz Vampire
+Blood-Chin Rager
 Gurmag Angler
 Grasp of Darkness #removal
 Go for the Throat #removal
@@ -221,7 +221,7 @@ Stoneshock Giant
 Staggershock #burn
 Shock #burn
 Young Pyromancer #tokens
-Vulshok Refugee
+Stormblood Berserker
 Pyrotechnics #burn
 War-Name Aspirant
 Trumpet Blast #trick
@@ -230,7 +230,7 @@ Tidehollow Sculler
 Windstorm #wrath
 Vines of Vastwood #trick
 Travel Preparations
-Titanic Growth #trick
+Press the Advantage #trick
 Dimir Aqueduct
 Boros Signet #ramp
 Bonesplitter
@@ -240,7 +240,7 @@ Kitchen Finks
 Life // Death
 Protect // Serve
 Icefeather Aven
-Armed // Dangerous
+Boggart Ram-Gang
 Far // Away
 Mind Stone #ramp
 Izzet Signet #ramp
@@ -309,7 +309,7 @@ Briarpack Alpha
 Squirrel Nest
 Bestial Menace #tokens
 Become Immense #trick
-Beast Within
+Plummet
 Harrow #ramp
 Erhnam Djinn
 Giant Growth #trick
@@ -319,7 +319,7 @@ Duskdale Wurm
 Deadly Recluse
 Darkthicket Wolf
 Llanowar Elves #ramp
-Leatherback Baloth
+Scion of the Wild
 Kalonian Tusker
 Invasive Species
 Hunt the Weak #fight
