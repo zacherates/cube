@@ -65,7 +65,7 @@ Impulse #draw
 Favorable Winds
 Fact or Fiction #draw
 Counterspell
-Azure Mage
+Skywise Teachings
 Aven Surveyor #bounce
 Omenspeaker
 Anticipate #draw
@@ -130,7 +130,7 @@ Chainer's Edict #removal
 Brain Maggot
 Black Knight
 Bitter Revelation #draw
-Geth's Verdict #removal
+Deadly Wanderings
 Gatekeeper of Malakir #removal
 Curse of Shallow Graves
 Doom Blade #removal
