@@ -132,7 +132,13 @@ def main():
 		return histogram(card.get('cmc', 0) for card in cards)
 
 	def power(cards):
-		return histogram(int(card.get('power', 0)) for card in cards)
+		def get_power(card):
+			try:
+				return int(card.get('power', 0))
+			except:
+				return 0
+		
+		return histogram(get_power(card) for card in cards)
 
 	def creature_curve(cards):
 		return curve(card for card in cards if 'Creature' in card.get('types', []))
