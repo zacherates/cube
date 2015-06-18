@@ -14,10 +14,10 @@ Banisher Priest #removal
 Geist of the Moors
 Flickerwisp
 Fiend Hunter
-Emerge Unscathed #trick
+Momentary Blink #trick
 Elite Scaleguard
 Inspired Charge
-Guardians' Pledge
+Intangible Virtue
 Guard Duty #removal
 Gods Willing #trick
 Glorious Charge
