@@ -1,7 +1,7 @@
 Abzan Falconer
 Arrest #removal
 Abzan Battle Priest
-Alabaster Mage
+Topan Freeblade
 Ainok Bond-Kin
 Swords to Plowshares
 Accorder Paladin
@@ -15,9 +15,9 @@ Geist of the Moors
 Flickerwisp
 Fiend Hunter
 Elite Scaleguard
-Inspired Charge
+Ampryn Tactician 
 Intangible Virtue
-Guard Duty #removal
+Echoes of the Kin Tree
 Gods Willing #trick
 Glorious Charge
 Glimmerpoint Stag
@@ -52,7 +52,7 @@ Serra Angel
 Errant Ephemeron
 Deep Analysis #draw
 Compulsive Research #draw
-Brainstorm #draw
+Claustrophobia
 White Knight
 War Priest of Thune
 Wandering Champion
@@ -81,7 +81,7 @@ Horizon Drake
 Gurmag Drowner
 Gitaxian Probe
 Frost Lynx
-Essence Scatter
+Clash of Wills
 Mistfire Adept
 Mind Control
 Merfolk Looter #draw
@@ -93,7 +93,7 @@ Impaler Shrike
 Preordain #cantrip
 Ponder #cantrip
 Phantom Warrior
-Phantom Beast
+Ringwarden Owl
 Phantasmal Dragon
 Phantasmal Bear
 Negate
@@ -110,10 +110,10 @@ Murderous Redcap #burn
 Infest #wrath
 Executioner's Capsule #removal
 Dread Return
-Youthful Scholar #draw
+Tower Geist
 Welkin Tern
 Water Servant
-Wall of Frost
+Watercourser
 Bellowing Saddlebrute
 Murderous Cut #removal
 Dead Drop #removal
@@ -128,7 +128,7 @@ Chainer's Edict #removal
 Brain Maggot
 Black Knight
 Bitter Revelation #draw
-Deadly Wanderings
+Shadows of the Past
 Gatekeeper of Malakir #removal
 Curse of Shallow Graves
 Doom Blade #removal
@@ -149,7 +149,7 @@ Liliana's Specter
 Liliana's Shade
 Knight of Infamy
 Ruthless Ripper
-Ruthless Cullblade
+Deadbridge Shaman
 Read the Bones #draw
 Rakshasa Gravecaller
 Hand of Silumgar
@@ -159,8 +159,8 @@ Skeletal Wurm
 Sign in Blood #draw
 Kezzerdrix
 Vulturous Aven
-Diabolic Servitude
-Vampire Lacerator
+Macabre Waltz
+Shambling Ghoul
 Ultimate Price #removal
 Ulcerate #removal
 Ukud Cobra
@@ -206,14 +206,14 @@ Guttersnipe
 Goblin Wardriver
 Scourge of Geier Reach
 Rummaging Goblin #draw
-Ruinous Minotaur
+Ghirapur Gearcrafter
 Pyroclasm #wrath
 Paragon of Fierce Defiance
 Marauding Maulhorn
 Lightning Strike #burn
 Gore-House Chainwalker
 Titan's Strength #trick
-Thundering Giant
+Seismic Elemental
 Temur Battle Rage #trick
 Stoneshock Giant
 Staggershock #burn
@@ -293,7 +293,7 @@ Acidic Slime
 Abzan Beastmaster
 Masked Admirers
 Penumbra Spider
-Wood Elves
+Llanowar Empath
 Cultivate #ramp
 Cudgel Troll
 Briarpack Alpha
@@ -327,7 +327,7 @@ Pelakka Wurm
 Paragon of Eternal Wilds
 Overrun #trick
 Oran-Rief Recluse
-River Boa 
+Leaf Gilder
 Reclamation Sage
 Rancor
 Rampant Growth #ramp
@@ -341,7 +341,7 @@ Scythe Tiger
 Savage Punch #fight
 Temur Sabertooth
 Imperiosaur
-Encroaching Wastes
+Ghost Quarter
 Elite Vanguard
 Cloistered Youth
 Vampire Nighthawk
