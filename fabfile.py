@@ -11,8 +11,7 @@ def deploy():
 	_, name = os.path.split(path)
 	id, = re.search(r"(\d+)", name).groups(0)
 	
-
-	put(path)
+	put(path, '~')
 	run("mv ~/{0} ~/cube".format(name))
 	with cd("~/cube"):
 		run("tar -xzvf " + name)
