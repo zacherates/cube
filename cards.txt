@@ -14,7 +14,6 @@ Banisher Priest #removal
 Geist of the Moors
 Flickerwisp
 Fiend Hunter
-Momentary Blink #trick
 Elite Scaleguard
 Inspired Charge
 Intangible Virtue
@@ -82,7 +81,6 @@ Horizon Drake
 Gurmag Drowner
 Gitaxian Probe
 Frost Lynx
-Forbidden Alchemy #draw
 Essence Scatter
 Mistfire Adept
 Mind Control
@@ -226,35 +224,28 @@ Pyrotechnics #burn
 War-Name Aspirant
 Trumpet Blast #trick
 Tormenting Voice #draw
-Tidehollow Sculler
 Windstorm #wrath
 Vines of Vastwood #trick
-Travel Preparations
 Press the Advantage #trick
 Dimir Aqueduct
-Boros Signet #ramp
 Bonesplitter
 Basalt Monolith #ramp
 Azorius Chancery
 Kitchen Finks
-Life // Death
-Protect // Serve
+Shaman of the Pack
+Thunderclap Wyvern
 Icefeather Aven
-Boggart Ram-Gang
-Far // Away
+Zendikar Incarnate
+Possessed Skaab
 Mind Stone #ramp
-Izzet Signet #ramp
 Gruul Turf
-Golgari Signet #ramp
 Evolving Wilds
 Everflowing Chalice #ramp
 Epochrasite
 Artisan of Kozilek
 Worn Powerstone #ramp
-Simic Signet #ramp
 Selesnya Sanctuary
 Rakdos Carnarium
-Orzhov Signet
 Mirrodin's Core #ramp
 Sol Ring
 Dread Statuary
@@ -267,13 +258,13 @@ Jungle Shrine
 Seaside Citadel
 Simic Growth Chamber #fixing
 Terramorphic Expanse #fixing
-Tectonic Edge
+Rogue's Passage
 Izzet Boilerworks #fixing
 Swiftfoot Boots
 Sphere of the Suns #ramp
 Signal Pest
 Hexplate Golem
-Ghost Quarter
+Foundry of the Consuls
 Frontier Bivouac
 Fireshrieker
 Explorer's Scope #ramp
@@ -358,3 +349,12 @@ Sengir Vampire
 Gravedigger
 Electrolyze
 Lightning Helix
+Chief of the Foundry
+Throwing Knife
+Jayemdae Tome
+Meteorite
+Runed Servitor
+Aerial Volley
+Whirler Rogue
+Valor in Akros
+War Oracle
