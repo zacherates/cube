@@ -1,52 +1,170 @@
 import codecs
+import csv
 import datetime
+import difflib
 import json
+import logging
 import pdb
 import re
 import sys
 
 from paver.easy import *
 
-def main():
-	with open("AllSets.json") as f:
-		sets = json.load(f)
+class CardDB(object):
+	def __init__(self, sets, logger):
+		self.cards = {}
+		self.logger = logger
 
-	cards = {}
-	for expansion in sets:
-		for card in sets[expansion]['cards']:
-			if 'multiverseid' in card:
-				name = card['name']
-				cards[name] = card
+		for expansion in sets:
+			for card in sets[expansion]['cards']:
+				if 'multiverseid' in card:
+					name = card['name']
+					self.cards[name] = card
 
-	def get_section(card):
-		if "Land" in card['types']:
-			return sections['L']
-		
-		if 'colors' not in card or len(card['colors']) == 0:
-			return sections['C']
+		self.abbreviations = {
+			"White": "W",
+			"Blue": "U",
+			"Black": "B",
+			"Red": "R",
+			"Green": "G",
+			"Land": "L",
+			"Colourless": "C",
+			"Multi-colour": "M",
+		}
 
-		if len(card['colors']) == 1:
-			color, = card['colors']
-			return sections[abbreviations[color]]
+		self.abbreviations_reverse = dict((v, k) for (k, v) in self.abbreviations.items())
 
-		return sections['M']
-
-	def get_card(name):
+	def get_card(self, name):
 		if "//" in name:
-			halves = [cards.get(part.strip()) for part in name.split("//")]
+			halves = [self.cards.get(part.strip()) for part in name.split("//")]
 
 			def fuse(name):
 				return list(set(halves[0][name] + halves[1][name]))
 
-			return {
+			return Card({
 				'name': name,
 				'types': fuse('types'),
 				'colors': fuse('colors'),
 				'cmc': halves[0]['cmc'] + halves[1]['cmc'],
 				'multiverseid': halves[0]['multiverseid']
-			}
+			}, self)
 
-		return cards.get(name)
+		card = self.cards.get(name)
+		if not card:
+			return None
+		return Card(card, self)
+
+
+	def get_card_sloppy(self, name):
+		def similarity(a, b):
+			return difflib.SequenceMatcher(None, a, b).ratio()
+		
+		def find_close(name):
+			candidates = [(card, similarity(card, name)) for card in self.cards]
+			return sorted(candidates, key = lambda (card, p): -p)[0]
+
+		def find_closest():
+			close_enough = find_close(name)
+			msg =  "Correcting '{0}' --> '{1}'.".format(name, close_enough)
+			self.logger.debug(msg)
+			return self.get_card(close_enough[0])
+
+		return self.get_card(name) or find_closest()
+
+	def __iter__(self):
+		return iter(self.get_card(name) for name in self.cards)
+
+	@staticmethod
+	def default():
+		return CardDB.from_path("AllSets.json")
+
+	@staticmethod
+	def from_path(path):
+		with open(path) as f:
+			sets = json.load(f)
+
+		if 'cards' in sets:
+			sets = {'set': sets}
+
+		return CardDB(sets, logging.getLogger("CardDB"))
+
+
+class Card(object):
+	def __init__(self, source, db):
+		self.source = source
+		self.db = db
+
+	@property
+	def types(self):
+		return self.source.get('types', [])
+
+	@property
+	def name(self):
+		return self.source.get('name')
+
+	@property
+	def multiverseid(self):
+		return self.source.get('multiverseid')
+
+	@property
+	def cmc(self):
+		return self.source.get('cmc', 0)
+
+	@property
+	def colors(self):
+		def flatten(lst):
+			return [item for sublist in lst for item in sublist]
+
+		def WUBRG(colors):
+			result = ['White', 'Blue', 'Black', 'Red', 'Green']
+			for color in result[:]:
+				if color not in colors:
+					result.remove(color)
+			return result
+
+		def dereminder(text):
+			return re.sub(r'\([^(]*\)', '', text)
+
+		if self.is_land():
+			return []
+
+		text = dereminder(self.source.get('text', ''))
+		cost = self.source.get('colors', [])
+		patterns = [r"{([WUBRG])}", r"{./([WUBRD])}", r"{([WUBRD])/.}"]
+		symbols = flatten(re.findall(pattern, text) for pattern in patterns)
+		activations = [self.db.abbreviations_reverse[c] for c in symbols]
+
+		return WUBRG(cost + activations)
+
+	@property
+	def image_url(self):
+		return "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card".format(self.multiverseid)
+
+	@property
+	def url(self):
+		return "http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}".format(self.multiverseid)
+
+	def is_land(self):
+		return 'Land' in self.types
+
+	def __str__(self):
+		return "<Card '{0}'>".format(self.name)
+
+def main():
+	db = CardDB.default()
+
+	def get_section(card):
+		if card.is_land():
+			return sections['L']
+		
+		if len(card.colors) == 0:
+			return sections['C']
+
+		if len(card.colors) == 1:
+			color = card.colors[0]
+			return sections[db.abbreviations[color]]
+
+		return sections['M']
 
 	sections = {
 		"W": [],			
@@ -59,22 +177,10 @@ def main():
 		"L": [],			
 	}
 
-	abbreviations = {
-		"White": "W",
-		"Blue": "U",
-		"Black": "B",
-		"Red": "R",
-		"Green": "G",
-		"Land": "L",
-		"Colourless": "C",
-		"Multi-colour": "M",
-	}
-
-	abbreviations_reverse = dict((v, k) for (k, v) in abbreviations.items())
 
 	def stat(name):
 		def counter(cards):
-			return sum(1 for card in cards if name in card['types'])
+			return sum(1 for card in cards if name in card.types)
 		return counter
 
 	creatures = stat("Creature")
@@ -88,7 +194,7 @@ def main():
 		match = re.match(r"^\s*([^#]*)\s*(?:#(\w+)\s*)*$", name)
 		name, tags = match.groups()
 		name = name.strip()
-		card = get_card(name)
+		card = db.get_card(name)
 		if card:
 			get_section(card).append(card)
 		else:
@@ -108,17 +214,11 @@ def main():
 		show(cards)
 		print "\n"
 
-	def render(template, out = sys.stdout):
-		if isinstance(template, basestring):
-			out.write(template)
-		else:
-			for part in template:
-				render(part, out = out)
-
 	def gallery(sections):
 		yield gallery_head()
 		for section in wubrg:
-			yield gallery_section(sections[section])
+			by_name = sorted(sections[section], key = lambda card: card.name)
+			yield gallery_section(by_name)
 		yield gallery_foot()
 
 	def histogram(samples):
@@ -129,7 +229,7 @@ def main():
 		return results[1:]
 
 	def curve(cards):
-		return histogram(card.get('cmc', 0) for card in cards)
+		return histogram(card.cmc for card in cards)
 
 	def power(cards):
 		def get_power(card):
@@ -141,7 +241,7 @@ def main():
 		return histogram(get_power(card) for card in cards)
 
 	def creature_curve(cards):
-		return curve(card for card in cards if 'Creature' in card.get('types', []))
+		return curve(card for card in cards if 'Creature' in card.types)
 
 	def stats(sections):
 		yield '<script src="../media/jquery-2.1.4.js"></script>'
@@ -151,7 +251,7 @@ def main():
 		yield "<tr><th>Color</th><th>Creatures</th><th>Instants</th><th>Sorceries</th><th>Enchantments</th><th>Total</th><th>Curve</th><th>(Creatures)</th></tr>"
 		for section in wubrg:
 			cards = sections[section]
-			name = abbreviations_reverse[section]
+			name = db.abbreviations_reverse[section]
 			yield '''<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td>
 				<td><span class="inlinesparkline">{6}</span></td>
 				<td><span class="inlinesparkline">{7}</span></td>
@@ -176,8 +276,6 @@ def main():
 		render(stats(sections), out = stats_html)
 
 	package()
-
-
 		
 def gallery_head():
 	yield """<!DOCTYPE html>
@@ -221,14 +319,13 @@ def gallery_foot():
 	"""
 
 
-def gallery_section(section):
-	cards = sorted(section, key = lambda card: card['name'])
+def gallery_section(cards, extra = lambda card: ''):
         tmpl = u'''<a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid={0}" class="card {2}">
-            <img src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}">
+            <img src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={0}&type=card" alt="{1}" title="{3}">
         </a>''' 
 
         def colors(card):
-            colors = card.get('colors')
+            colors = card.colors
             if not colors or len(colors) < 1:
                 return "colorless"
 
@@ -239,13 +336,22 @@ def gallery_section(section):
 
 
         def types(card):
-            return u' '.join(card.get('types', []) + [colors(card)]).lower()
+            return u' '.join(card.types + [colors(card)]).lower()
 
-	yield "\n".join(tmpl.format(card.get('multiverseid'), card.get("name"), types(card)) for card in cards)
+	yield "\n".join(tmpl.format(card.multiverseid, card.name, types(card), extra(card)) for card in cards)
+
+
+def render(template, out = sys.stdout):
+	if isinstance(template, basestring):
+		out.write(template)
+	else:
+		for part in template:
+			render(part, out = out)
+
 
 def show(section, out = sys.stdout):
-	cards = sorted(section, key = lambda card: card['name'])
-	print >> out, "\n".join(card['name'] for card in cards)
+	cards = sorted(section, key = lambda card: card.name)
+	print >> out, "\n".join(card.name for card in cards)
 
 def lines():
 	with codecs.open("cards.txt", "r", "utf-8") as f:
@@ -260,6 +366,35 @@ def package():
     sh("cp -r media out/index.html " + target)
     sh("cd dist && tar -czvf {0}.tar.gz {0}".format(target.name))
 
+def set_review(path):
+	def include_ratings(card):
+		ratings = card.extra[2], card.extra[3]
+		return 'mine: {0}, lsv: {1}'.format(*ratings)
+
+	def load_card(rating):
+		card = db.get_card_sloppy(rating[1])
+		card.extra = rating
+		return card
+
+	db = CardDB.from_path("cards.json")
+	with open(path) as f:
+		ratings = list(csv.reader(f))[1:]
+		
+	cards = [load_card(rating) for rating in ratings]
+
+	with codecs.open("out/ori.html", "w", 'utf-8') as html:
+		render(gallery_section(cards, extra = include_ratings), out = html)
+
+def dispatch(args):
+	if len(args) == 0:
+		main()
+		return
+
+	cmd = args.pop(0)
+	if cmd == "review":
+		set_review(*args)
+	else:
+		raise Exception("Unknown command '{0}'.".format(cmd))
 
 if __name__ == "__main__":
-	main()
+	dispatch(sys.argv[1:])
