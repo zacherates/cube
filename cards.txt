@@ -32,7 +32,7 @@ Oblivion Ring #removal
 Master of Diversion
 Dragon Hunter
 Mardu Hordechief #tokens
-Pianna, Nomad Captain
+Consul's Lieutenant
 Lingering Souls #tokens
 Ornitharch
 Selfless Cathar
@@ -44,7 +44,7 @@ Suspension Field #removal
 Pacifism #removal
 Valorous Stance #removal
 Triplicate Spirits #tokens
-Steppe Lynx
+Anointer of Champions
 Spectral Procession #tokens
 Smite #removal
 Silverchase Fox
@@ -343,7 +343,7 @@ Temur Sabertooth
 Imperiosaur
 Ghost Quarter
 Elite Vanguard
-Cloistered Youth
+Sentinel of the Eternal Watch
 Vampire Nighthawk
 Sengir Vampire
 Gravedigger
