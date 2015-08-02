@@ -39,11 +39,19 @@ var picker = (function () {
 		},
 		update: function (id) {
 			this.events.trigger("changed", this);
-			console.log("Picked " + id);
-			console.log(this.message());
-			console.log(this);
 		}
 	};
+
+	function post(url, data, success, dataType) {
+		$.ajax({
+			  url: url,
+			  type: "POST",
+			  data: JSON.stringify(data),
+			  contentType: "application/json; charset=utf-8",
+			  dataType: 'html',
+			  success: success
+		});
+	}
 
 	function init($root) {
 		ctx.$root = $root;
@@ -65,8 +73,24 @@ var picker = (function () {
 		});
 
 		picker.events.on("done", function (){
-			ctx.$cards.load("/sample");
-			picker.reset();
+			var cards = ctx.$cards.find(".card").map(function () {
+				return $(this).data('multiverseid');	
+			}).toArray();
+
+			var data = {
+				good: picker.good,
+				bad: picker.bad,
+				rest: cards,	
+			};
+
+			post("/post-picks", data, function (html) {
+				picker.reset();
+
+				ctx.$cards
+					.empty()
+					.html(html);
+			}, 'html');
+
 		});
 
 		picker.events.on("changed", function (){
