@@ -17,7 +17,7 @@ Fiend Hunter
 Elite Scaleguard
 Ampryn Tactician 
 Intangible Virtue
-Echoes of the Kin Tree
+Wall of Omens
 Gods Willing #trick
 Glorious Charge
 Glimmerpoint Stag
@@ -71,7 +71,7 @@ Anticipate #draw
 Air Servant
 Æther Adept
 Enclave Cryptologist #draw
-Domestication
+Narcolepsy
 Delver of Secrets
 Looter il-Kor
 Crippling Chill
@@ -246,7 +246,7 @@ Artisan of Kozilek
 Worn Powerstone #ramp
 Selesnya Sanctuary
 Rakdos Carnarium
-Mirrodin's Core #ramp
+Mage-Ring Network
 Sol Ring
 Dread Statuary
 Arcane Sanctum
@@ -304,7 +304,7 @@ Plummet
 Harrow #ramp
 Erhnam Djinn
 Giant Growth #trick
-Garruk's Companion
+Undercity Troll
 Sakura-Tribe Elder
 Duskdale Wurm
 Deadly Recluse
@@ -340,7 +340,7 @@ Sedge Scorpion
 Scythe Tiger
 Savage Punch #fight
 Temur Sabertooth
-Imperiosaur
+Skysnare Spider
 Ghost Quarter
 Elite Vanguard
 Sentinel of the Eternal Watch
