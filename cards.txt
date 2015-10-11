@@ -311,7 +311,7 @@ Deadly Recluse
 Darkthicket Wolf
 Llanowar Elves #ramp
 Scion of the Wild
-Kalonian Tusker
+Garruk's Companion
 Invasive Species
 Hunt the Weak #fight
 Howl of the Night Pack #tokens

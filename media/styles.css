@@ -67,7 +67,7 @@ body {
 	text-align: left;
 }
 
-.info {
+.status {
 	font-size: 150%;
 	margin-bottom: 0.5em;
 	text-align: center;
@@ -82,12 +82,12 @@ body {
 	box-shadow: 0px 0px 5px red;
 }
 
-.info.good {
+.status.good {
 	color: #091A09;
 	background-color: #efe;
 }
 
-.info.bad {
+.status.bad {
 	color: #1A0909;
 	background-color: #fee;
 }
@@ -99,4 +99,14 @@ body {
 
 .card {
 	display: inline-block;
+}
+
+.p1p1 .card img {
+	height: 209px;
+	width: 150px;
+}
+
+h2 {
+	font-size: 200%;
+	font-weight: bold;
 }

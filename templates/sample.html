@@ -1,5 +1,7 @@
+<div data-rated="{{ rated }}" data-total="{{ total }}">
 {% for card in sample %}
 <span class="card" data-multiverseid="{{ card.multiverseid }}">
 	<img src="{{ card.image_url }}">
 </span>
 {% endfor %}
+</div>

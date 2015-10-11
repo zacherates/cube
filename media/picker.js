@@ -56,8 +56,15 @@ var picker = (function () {
 	function init($root) {
 		ctx.$root = $root;
 
-		ctx.$info = $("<div class='info'>")
+		ctx.$status = $("<div class='status'>")
 			.appendTo($root);
+
+		ctx.$info = $("<span class='info'>")
+			.appendTo(ctx.$status);
+
+		ctx.$progress = $("<progress>")
+			.hide()
+			.appendTo(ctx.$status);
 
 		ctx.$cards = $("<div class='cards'>")
 			.appendTo($root);
@@ -86,6 +93,14 @@ var picker = (function () {
 			post("/post-picks", data, function (html) {
 				picker.reset();
 
+				var rated = $(html).data('rated'),
+					total = $(html).data('total');
+
+				ctx.$progress
+					.attr('value', rated)
+					.attr('max', total)
+					.show();
+
 				ctx.$cards
 					.empty()
 					.html(html);
@@ -94,9 +109,11 @@ var picker = (function () {
 		});
 
 		picker.events.on("changed", function (){
-			ctx.$info
+			ctx.$status
 				.removeClass("good bad")
-				.addClass(picker.picking())
+				.addClass(picker.picking());
+
+			ctx.$info
 				.text(picker.message());
 		});
 

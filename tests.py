@@ -36,9 +36,29 @@ def test_attrs():
 	assert 'Hill Giant' == giant.name
 	assert 802 == giant.multiverseid
 	assert 4 == giant.cmc
+	assert 'Common' == giant.rarity
+	assert not giant.is_basic_land
+	assert giant.is_side_a
+
+	also_a_giant = db.get_card_by_id(802)
+	assert giant == also_a_giant
+
+	not_a_giant = db.get_card_by_id(803)
+	assert not_a_giant != giant
 
 	matches(giant.url, r"^http://gatherer.wizards.com/Pages/Card/Details\.aspx\?multiverseid=\d+$")
 	matches(giant.image_url, r"^http://gatherer.wizards.com/Handlers/Image\.ashx\?multiverseid=\d+&type=card$")
+
+	forest = db.get_card("Forest")
+	assert forest.is_basic_land
+
+	lily_a = db.get_card("Liliana, Heretical Healer")
+	assert lily_a.is_side_a
+
+	lily_b = db.get_card("Liliana, Defiant Necromancer")
+	assert not lily_b.is_side_a
+
+
 
 sloppy_names = [
 	('Hull Giant', 'Hill Giant'),
@@ -59,5 +79,11 @@ def test_iter():
 	print sample[0], build.Card
 	assert isinstance(sample[0], build.Card)
 
+
+def test_filters():
+	common, = itertools.islice(db.commons, 0, 1)	
+	uncommon, = itertools.islice(db.uncommons, 0, 1)	
+	rare, = itertools.islice(db.rares, 0, 1)	
+	mythic, = itertools.islice(db.mythics, 0, 1)	
 
 	

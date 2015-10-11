@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, create_engine, ForeignKey, PrimaryKeyConstraint
+from sqlalchemy import Column, Integer, String, create_engine, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
@@ -23,6 +23,46 @@ class Pick(Base):
 	person_id = Column(Integer, ForeignKey('person.id'))
 	better = Column(String(250), ForeignKey('card.multiverse_id'))
 	worse = Column(String(250), ForeignKey('card.multiverse_id'))
+
+class Tier(Base):
+	__tablename__ = "tier"
+
+	id = Column(Integer, primary_key = True)
+	person_id = Column(Integer, ForeignKey('person.id'))
+	description = Column(String(250))
+
+
+class TierToCard(Base):
+	__tablename__ = "tier_to_card"
+
+	id = Column(Integer, primary_key = True)
+	tier_id = Column(Integer, ForeignKey('tier.id'))
+	card = Column(String(250), ForeignKey('card.multiverse_id'))
+
+class Tag(Base):
+	__tablename__ = "tag"
+
+	id = Column(Integer, primary_key = True)
+	name = Column(String(250), unique = True)
+
+
+
+class CardToTag(Base):
+	__tablename__ = "card_to_tag"
+
+	id = Column(Integer, primary_key = True)
+	person_id = Column(Integer, ForeignKey('person.id'))
+	tag_id = Column(Integer, ForeignKey('tag.id'))
+	card = Column(String(250), ForeignKey('card.multiverse_id'))
+
+
+class Vote(Base):
+	__tablename__ = "vote"
+
+	id = Column(Integer, primary_key = True)
+	person_id = Column(Integer, ForeignKey('person.id'))
+	type = Column(String(250))
+	card = Column(String(250), ForeignKey('card.multiverse_id'))
 
 
 def connect():

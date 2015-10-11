@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/media/reset.css">
+		<link rel="stylesheet" href="/media/styles.css">
+		<script src="/media/jquery-2.1.4.js"></script>
+		<script src="/media/pick_order_list.js"></script>
+	</head>
+	<body>
+		<script>$(pick_order_list.init);</script>
+
+		<div id="gallery">
+		{% for name, cards in sections %}
+			<h2>{{ name }}</h2>
+			{% for card in cards %}
+			<span class="card" data-multiverseid="{{ card.multiverseid }}">
+				<img src="{{ card.image_url }}">
+			</span>
+			{% endfor %}
+		{% endfor %}
+		</div>
+	</body>
+</html>
