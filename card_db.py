@@ -168,7 +168,7 @@ class Card(object):
 		if self.is_land():
 			return []
 
-		text = dereminder(self.source.get('text', ''))
+		text = dereminder(self.source.get('text', '')) + ' ' + self.source.get('manaCost')
 		cost = self.source.get('colors', [])
 		patterns = [r"{([WUBRG])}", r"{./([WUBRD])}", r"{([WUBRD])/.}"]
 		symbols = flatten(re.findall(pattern, text) for pattern in patterns)
