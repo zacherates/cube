@@ -27,7 +27,7 @@ Kor Hookmaster
 Knight of Glory
 Kill Shot #removal
 Journey to Nowhere #removal
-Oust #removal
+Gideon's Reproach
 Oblivion Ring #removal
 Master of Diversion
 Dragon Hunter
@@ -46,7 +46,7 @@ Valorous Stance #removal
 Triplicate Spirits #tokens
 Anointer of Champions
 Spectral Procession #tokens
-Smite #removal
+Stasis Snare
 Silverchase Fox
 Serra Angel
 Errant Ephemeron
@@ -72,7 +72,7 @@ Air Servant
 Æther Adept
 Enclave Cryptologist #draw
 Narcolepsy
-Delver of Secrets
+Coralhelm Guide
 Looter il-Kor
 Crippling Chill
 Waterfront Bouncer
@@ -87,14 +87,14 @@ Mind Control
 Merfolk Looter #draw
 Marang River Prowler
 Mana Leak
-Living Tsunami
+Jhessian Thief
 Into the Roil
-Impaler Shrike
+Windrider Patrol
 Preordain #cantrip
 Ponder #cantrip
 Phantom Warrior
 Ringwarden Owl
-Phantasmal Dragon
+Eldrazi Skyspawner
 Phantasmal Bear
 Negate
 Murder of Crows
@@ -146,7 +146,7 @@ Murder #removal
 Morkrut Banshee
 Moan of the Unhallowed
 Liliana's Specter
-Liliana's Shade
+Carrier Thrall
 Knight of Infamy
 Ruthless Ripper
 Deadbridge Shaman
@@ -187,7 +187,7 @@ Forge Devil
 Sarkhan's Rage #burn
 Flame Slash #burn
 Fireball
-Fiery Hellhound
+Boggart Brute
 Ember Hauler
 Shockmaw Dragon
 Lightning Mauler
@@ -232,7 +232,7 @@ Bonesplitter
 Basalt Monolith #ramp
 Azorius Chancery
 Kitchen Finks
-Shaman of the Pack
+Catacomb Sifter
 Thunderclap Wyvern
 Icefeather Aven
 Zendikar Incarnate
@@ -263,7 +263,7 @@ Izzet Boilerworks #fixing
 Swiftfoot Boots
 Sphere of the Suns #ramp
 Signal Pest
-Hexplate Golem
+Kozilek's Channeler
 Foundry of the Consuls
 Frontier Bivouac
 Fireshrieker
@@ -306,7 +306,7 @@ Erhnam Djinn
 Giant Growth #trick
 Undercity Troll
 Sakura-Tribe Elder
-Duskdale Wurm
+Plated Crusher
 Deadly Recluse
 Darkthicket Wolf
 Llanowar Elves #ramp
@@ -317,14 +317,14 @@ Hunt the Weak #fight
 Howl of the Night Pack #tokens
 Heir of the Wilds
 Nessian Game Warden
-Nemesis of Mortals
+Conclave Naturalists
 Regrowth
 Naturalize
 Mutagenic Growth #trick
 Mold Shambler
 Epic Confrontation #fight
 Pelakka Wurm
-Paragon of Eternal Wilds
+Oran-Reif Invoker
 Overrun #trick
 Oran-Rief Recluse
 Leaf Gilder
@@ -337,11 +337,11 @@ Tuskguard Captain
 Sylvan Ranger #ramp
 Stampeding Elk Herd
 Sedge Scorpion
-Scythe Tiger
+Elvish Visionary 
 Savage Punch #fight
 Temur Sabertooth
 Skysnare Spider
-Ghost Quarter
+Spawning Bed
 Elite Vanguard
 Sentinel of the Eternal Watch
 Vampire Nighthawk
@@ -356,5 +356,5 @@ Pilgrim's Eye
 Runed Servitor
 Aerial Volley
 Whirler Rogue
-Valor in Akros
+Retreat to Emeria
 War Oracle
