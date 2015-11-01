@@ -204,7 +204,7 @@ Hordeling Outburst #tokens
 Twin Bolt #burn
 Guttersnipe
 Goblin Wardriver
-Scourge of Geier Reach
+Rolling Thunder
 Rummaging Goblin #draw
 Ghirapur Gearcrafter
 Pyroclasm #wrath
@@ -236,7 +236,7 @@ Shaman of the Pack
 Thunderclap Wyvern
 Icefeather Aven
 Zendikar Incarnate
-Possessed Skaab
+Baleful Strix
 Mind Stone #ramp
 Gruul Turf
 Evolving Wilds
@@ -351,8 +351,8 @@ Electrolyze
 Lightning Helix
 Chief of the Foundry
 Throwing Knife
-Jayemdae Tome
-Meteorite
+Hedron Archive
+Pilgrim's Eye
 Runed Servitor
 Aerial Volley
 Whirler Rogue
