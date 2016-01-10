@@ -72,12 +72,12 @@ Air Servant
 Æther Adept
 Enclave Cryptologist #draw
 Narcolepsy
-Coralhelm Guide
+Augury Owl
 Looter il-Kor
 Crippling Chill
 Waterfront Bouncer
-Illusory Angel
-Horizon Drake
+Ninja of the Deep Hours
+Messenger Drake
 Gurmag Drowner
 Gitaxian Probe
 Frost Lynx
@@ -95,10 +95,10 @@ Ponder #cantrip
 Phantom Warrior
 Ringwarden Owl
 Eldrazi Skyspawner
-Phantasmal Bear
+Mirror Match
 Negate
 Murder of Crows
-Vapor Snag #bounce
+Unsummon
 Treasure Cruise #draw
 Control Magic
 Thassa's Emissary
@@ -117,7 +117,7 @@ Watercourser
 Bellowing Saddlebrute
 Murderous Cut #removal
 Dead Drop #removal
-Arrogant Bloodlord
+Reassembling Skeleton
 Victimize
 Shriekmaw #removal
 Nekrataal #removal
@@ -127,7 +127,7 @@ Child of Night
 Chainer's Edict #removal
 Brain Maggot
 Black Knight
-Bitter Revelation #draw
+Night's Whisper
 Shadows of the Past
 Gatekeeper of Malakir #removal
 Curse of Shallow Graves
@@ -169,7 +169,7 @@ Goblin Bombardment #burn
 Flametongue Kavu
 Faithless Looting #draw
 Beetleback Chief #tokens
-Xathrid Slyblade
+Phyrexian Rager
 Battle Brawler
 Brimstone Mage
 Borderland Marauder
@@ -326,14 +326,14 @@ Epic Confrontation #fight
 Pelakka Wurm
 Oran-Rief Invoker
 Overrun #trick
-Oran-Rief Recluse
+Eternal Witness
 Leaf Gilder
 Reclamation Sage
 Rancor
 Rampant Growth #ramp
 Raised by Wolves #tokens
 Grizzly Fate
-Tuskguard Captain
+Wall of Blossoms
 Sylvan Ranger #ramp
 Stampeding Elk Herd
 Sedge Scorpion
