@@ -235,7 +235,7 @@ Kitchen Finks
 Catacomb Sifter
 Thunderclap Wyvern
 Icefeather Aven
-Zendikar Incarnate
+Bloodbraid Elf
 Baleful Strix
 Mind Stone #ramp
 Gruul Turf
